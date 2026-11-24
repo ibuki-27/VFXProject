@@ -6,6 +6,7 @@ public class ShockwaveController : MonoBehaviour
 {
     [SerializeField] private VisualEffect shockwave;
     [SerializeField] private InputAction shockwaveAction = new InputAction(binding: "<keyboard>/space");
+    [SerializeField] private CameraShake cameraShake;
 
     private void OnEnable()
     {
@@ -27,6 +28,7 @@ public class ShockwaveController : MonoBehaviour
         if (shockwaveAction.WasPressedThisFrame())
         {
             shockwave.Play();
+            cameraShake.Shake();
         }
     }
 }
