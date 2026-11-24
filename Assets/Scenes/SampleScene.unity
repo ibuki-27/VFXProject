@@ -146,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 66392161}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 159060149}
   - component: {fileID: 159060148}
   - component: {fileID: 159060147}
+  - component: {fileID: 159060151}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -352,6 +353,36 @@ Transform:
   - {fileID: 66392162}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159060151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159060146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa8799e3518cb34a8d63804c3f9b6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShockwaveController
+  shockwave: {fileID: 66392164}
+  shockwaveAction:
+    m_Name: Shockwave
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 806308cd-384c-49f6-b39a-63c1b8f8cc5c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f3b7e8b4-7223-49f5-864e-4d2a625cc4ae
+      m_Path: <keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shockwave
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
